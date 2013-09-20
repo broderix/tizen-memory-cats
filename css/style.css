@@ -1,0 +1,174 @@
+* {
+    font-family: Lucida Sans, Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0px auto;
+}
+
+#page_splash_screen, #page_game, #page_about {
+	display: none;
+}
+
+body {
+  min-width: 720px;
+}
+
+/* Containers
+----------------------------------------------------------------------------------------------------*/
+.container_3 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 720px;
+}
+
+/* Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+
+.grid_1,
+.grid_2,
+.grid_3 {
+	display:inline;
+	float: left;
+	position: relative;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: center;
+}
+
+
+
+.push_1, .pull_1,
+.push_2, .pull_2,
+.push_3, .pull_3 {
+	position:relative;
+}
+
+
+/* Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+
+.alpha {
+	margin-left: 0;
+}
+
+.omega {
+	margin-right: 0;
+}
+
+/* Grid >> 3 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_3 .grid_1 {
+	width:220px;
+}
+
+.container_3 .grid_2 {
+	width:460px;
+}
+
+.container_3 .grid_3 {
+	width:700px;
+}
+
+
+
+
+/* Prefix Extra Space >> 3 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_3 .prefix_1 {
+	padding-left:240px;
+}
+
+.container_3 .prefix_2 {
+	padding-left:480px;
+}
+
+
+
+/* Suffix Extra Space >> 3 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_3 .suffix_1 {
+	padding-right:240px;
+}
+
+.container_3 .suffix_2 {
+	padding-right:480px;
+}
+
+
+
+/* Push Space >> 3 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_3 .push_1 {
+	left:240px;
+}
+
+.container_3 .push_2 {
+	left:480px;
+}
+
+
+
+/* Pull Space >> 3 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_3 .pull_1 {
+	left:-240px;
+}
+
+.container_3 .pull_2 {
+	left:-480px;
+}
+
+
+
+
+/* `Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  margin-bottom: 60px;
+}
+
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+
+.clearfix:before,
+.clearfix:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*
+  The following zoom:1 rule is specifically for IE6 + IE7.
+  Move to separate stylesheet if invalid CSS is a problem.
+*/
+
+.clearfix {
+  zoom: 1;
+}
