@@ -10,8 +10,25 @@ body {
 	display: none;
 }
 
+
+/*
+	Variable Grid System.
+	Learn more ~ http://www.spry-soft.com/grids/
+	Based on 960 Grid System - http://960.gs/
+
+	Licensed under GPL and MIT.
+*/
+
+/*
+  Forces backgrounds to span full width,
+  even if there is horizontal scrolling.
+  Increase this if your layout is wider.
+
+  Note: IE6 works fine without this fix.
+*/
+
 body {
-  min-width: 720px;
+  min-width: 360px;
 }
 
 /* Containers
@@ -19,7 +36,7 @@ body {
 .container_3 {
 	margin-left: auto;
 	margin-right: auto;
-	width: 720px;
+	width: 360px;
 }
 
 /* Grid >> Global
@@ -32,9 +49,8 @@ body {
 	display:inline;
 	float: left;
 	position: relative;
-	margin-left: 10px;
-	margin-right: 10px;
-	text-align: center;
+	margin-left: 3px;
+	margin-right: 2px;
 }
 
 
@@ -62,15 +78,15 @@ body {
 
 
 .container_3 .grid_1 {
-	width:220px;
+	width:115px;
 }
 
 .container_3 .grid_2 {
-	width:460px;
+	width:235px;
 }
 
 .container_3 .grid_3 {
-	width:700px;
+	width:355px;
 }
 
 
@@ -81,11 +97,11 @@ body {
 
 
 .container_3 .prefix_1 {
-	padding-left:240px;
+	padding-left:120px;
 }
 
 .container_3 .prefix_2 {
-	padding-left:480px;
+	padding-left:240px;
 }
 
 
@@ -95,11 +111,11 @@ body {
 
 
 .container_3 .suffix_1 {
-	padding-right:240px;
+	padding-right:120px;
 }
 
 .container_3 .suffix_2 {
-	padding-right:480px;
+	padding-right:240px;
 }
 
 
@@ -109,11 +125,11 @@ body {
 
 
 .container_3 .push_1 {
-	left:240px;
+	left:120px;
 }
 
 .container_3 .push_2 {
-	left:480px;
+	left:240px;
 }
 
 
@@ -123,11 +139,11 @@ body {
 
 
 .container_3 .pull_1 {
-	left:-240px;
+	left:-120px;
 }
 
 .container_3 .pull_2 {
-	left:-480px;
+	left:-240px;
 }
 
 
@@ -145,7 +161,6 @@ body {
   visibility: hidden;
   width: 0;
   height: 0;
-  margin-bottom: 60px;
 }
 
 /* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
